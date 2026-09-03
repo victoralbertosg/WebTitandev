@@ -1,0 +1,16 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Node / Environment (if added later)
+node_modules/
+.env
+.env.local
+
+# Temp
+/tmp/
+*.tmp

@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="TitanDataSolution — Ingeniería de software avanzada, Inteligencia Artificial, Ciencia de Datos y Big Data. Transformamos datos en decisiones estratégicas para tu negocio." />
+  <meta name="keywords" content="inteligencia artificial, ciencia de datos, big data, machine learning, desarrollo de software, consultoría tecnológica, cloud computing, Colombia" />
+  <meta property="og:title" content="TitanDataSolution — Ingeniería de Software & IA" />
+  <meta property="og:description" content="Transformamos datos en decisiones. Expertos en IA, Big Data y Sistemas Informáticos." />
+  <meta property="og:type" content="website" />
+  <meta name="robots" content="index, follow" />
+  <title>TitanDataSolution — Ingeniería de Software, IA & Data Science</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TitanDataSolution",
+    "description": "Ingeniería de software avanzada, IA, Ciencia de Datos y Big Data",
+    "url": "https://titandatasolution.com",
+    "sameAs": [],
+    "serviceType": ["Inteligencia Artificial", "Big Data", "Ciencia de Datos", "Desarrollo de Software"]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo" id="nav-logo-link" aria-label="TitanDataSolution inicio">
+        <img src="assets/images/logo.png" alt="TitanDataSolution Logo" class="logo-img" />
+        <span class="logo-text">Titan<span class="logo-accent">Data</span>Solution</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu" role="menubar">
+        <li role="none"><a href="#servicios" class="nav-link" role="menuitem">Servicios</a></li>
+        <li role="none"><a href="#tecnologias" class="nav-link" role="menuitem">Tecnologías</a></li>
+        <li role="none"><a href="#portafolio" class="nav-link" role="menuitem">Portafolio</a></li>
+        <li role="none"><a href="#proceso" class="nav-link" role="menuitem">Proceso</a></li>
+        <li role="none"><a href="#nosotros" class="nav-link" role="menuitem">Nosotros</a></li>
+        <li role="none"><a href="#contacto" class="nav-link nav-cta" id="nav-cta-btn" role="menuitem">Consulta Gratuita</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="inicio" aria-label="Sección principal">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-glow glow-1" aria-hidden="true"></div>
+    <div class="hero-glow glow-2" aria-hidden="true"></div>
+    <div class="hero-glow glow-3" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot"></span>
+        <span>Ingeniería de Software de Vanguardia</span>
+      </div>
+
+      <h1 class="hero-title reveal">
+        Transformamos <span class="gradient-text">Datos</span> en<br />
+        Decisiones Estratégicas
+      </h1>
+
+      <p class="hero-subtitle reveal">
+        Desarrollamos sistemas inteligentes, modelos de IA y pipelines de Big Data
+        que impulsan el crecimiento de tu organización con precisión y escalabilidad.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#servicios" class="btn btn-primary" id="hero-services-btn">
+          <span>Explorar Servicios</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="#contacto" class="btn btn-secondary" id="hero-contact-btn">
+          <span>Hablar con un Experto</span>
+        </a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat-item">
+          <span class="stat-number" data-target="80" id="stat-projects">0</span>
+          <span class="stat-label">Proyectos Exitosos</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="50" id="stat-clients">0</span>
+          <span class="stat-label">Clientes Satisfechos</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="8" id="stat-years">0</span>
+          <span class="stat-label">Años de Experiencia</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="30" id="stat-tech">0</span>
+          <span class="stat-label">Tecnologías Dominadas</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator reveal" aria-hidden="true">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Desliza hacia abajo</span>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section class="services" id="servicios" aria-label="Nuestros servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nuestros Servicios</span>
+        <h2 class="section-title">Soluciones de <span class="gradient-text">Ingeniería</span> a tu Medida</h2>
+        <p class="section-subtitle">Combinamos tecnología de punta con experiencia profunda para entregar sistemas que generan valor real en tu negocio.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Service 1 -->
+        <article class="service-card reveal" id="service-ai">
+          <div class="service-icon-wrapper"><div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/><circle cx="7.5" cy="14.5" r="1.5"/><circle cx="16.5" cy="14.5" r="1.5"/></svg>
+          </div></div>
+          <h3 class="service-title">Inteligencia Artificial &amp; LLMs</h3>
+          <p class="service-desc">Implementamos Agentes IA autónomos, sistemas RAG/GraphRAG y pipelines de LLMs con LangGraph y CrewAI que automatizan flujos de trabajo complejos con razonamiento contextual y trazabilidad completa.</p>
+          <ul class="service-tags" aria-label="Tecnologías relacionadas">
+            <li>Agentes IA / RAG</li><li>LangGraph / CrewAI</li><li>LLMs / GPT / Llama</li><li>GraphRAG</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-ai-link">Solicitar Proyecto <span aria-hidden="true">→</span></a>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="service-card reveal" id="service-datascience">
+          <div class="service-icon-wrapper"><div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+          </div></div>
+          <h3 class="service-title">Ciencia de Datos &amp; MLOps</h3>
+          <p class="service-desc">Transformamos datos en ventajas competitivas: modelos predictivos, análisis estadístico avanzado y plataformas MLOps con MLflow y Kubeflow para gobernar el ciclo de vida completo de modelos en producción.</p>
+          <ul class="service-tags" aria-label="Tecnologías relacionadas">
+            <li>MLflow / Kubeflow</li><li>Predicción Avanzada</li><li>Feature Engineering</li><li>Dashboards BI</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-ds-link">Solicitar Proyecto <span aria-hidden="true">→</span></a>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="service-card reveal" id="service-bigdata">
+          <div class="service-icon-wrapper"><div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div></div>
+          <h3 class="service-title">Big Data &amp; Data Lakehouse</h3>
+          <p class="service-desc">Arquitecturas de datos de siguiente generación con Apache Iceberg, Delta Lake y streaming en tiempo real con Kafka y Flink. Lakehouses unificados que eliminan silos y habilitan analítica a escala de petabytes.</p>
+          <ul class="service-tags" aria-label="Tecnologías relacionadas">
+            <li>Apache Iceberg / Delta Lake</li><li>Kafka / Flink</li><li>Apache Spark</li><li>ClickHouse / Trino</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-bigdata-link">Solicitar Proyecto <span aria-hidden="true">→</span></a>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="service-card reveal" id="service-software">
+          <div class="service-icon-wrapper"><div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div></div>
+          <h3 class="service-title">Desarrollo de Sistemas Web</h3>
+          <p class="service-desc">Construimos aplicaciones full-stack modernas: APIs GraphQL/gRPC, portales Next.js con SSR, backends FastAPI y sistemas en tiempo real. Arquitecturas limpias, escalables y listas para producción empresarial.</p>
+          <ul class="service-tags" aria-label="Tecnologías relacionadas">
+            <li>Next.js / FastAPI</li><li>GraphQL / gRPC</li><li>Microservicios</li><li>APIs RESTful</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-software-link">Solicitar Proyecto <span aria-hidden="true">→</span></a>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="service-card reveal" id="service-cloud">
+          <div class="service-icon-wrapper"><div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          </div></div>
+          <h3 class="service-title">Cloud &amp; DevOps</h3>
+          <p class="service-desc">Infraestructura cloud nativa en AWS, GCP y Azure con Kubernetes, GitOps y ArgoCD. Observabilidad completa con OpenTelemetry, Prometheus y Grafana para máxima disponibilidad y control operacional.</p>
+          <ul class="service-tags" aria-label="Tecnologías relacionadas">
+            <li>AWS / GCP / Azure</li><li>Kubernetes / GitOps</li><li>Terraform / Pulumi</li><li>OpenTelemetry</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-cloud-link">Solicitar Proyecto <span aria-hidden="true">→</span></a>
+        </article>
+
+        <!-- Service 6 -->
+        <article class="service-card reveal" id="service-digital">
+          <div class="service-icon-wrapper"><div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div></div>
+          <h3 class="service-title">Transformación Digital</h3>
+          <p class="service-desc">Modernizamos sistemas legacy con estrategias de migración estructurada, automatización RPA inteligente y adopción de tecnologías emergentes. Acompañamos cada etapa del cambio con metodologías probadas.</p>
+          <ul class="service-tags" aria-label="Tecnologías relacionadas">
+            <li>Migración Legacy</li><li>RPA / Automatización</li><li>Consultoría TI</li><li>Estrategia Digital</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-digital-link">Solicitar Proyecto <span aria-hidden="true">→</span></a>
+        </article>
+
+        <!-- Service 7 — NUEVO -->
+        <article class="service-card reveal service-card--new" id="service-vision">
+          <div class="service-icon-wrapper"><div class="service-icon service-icon--vision">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div></div>
+          <span class="service-badge">Nuevo</span>
+          <h3 class="service-title">Visión Artificial &amp; Computer Vision</h3>
+          <p class="service-desc">Sistemas de visión por computadora en tiempo real para manufactura, logística y salud. Implementamos YOLO11/26, SAM 2 y modelos VLMs para detección de objetos, segmentación y análisis inteligente de imágenes y video en edge.</p>
+          <ul class="service-tags" aria-label="Tecnologías relacionadas">
+            <li>YOLO11 / YOLO26</li><li>SAM 2 / VLMs</li><li>OpenCV / PyTorch</li><li>Edge AI / Jetson</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-vision-link">Solicitar Proyecto <span aria-hidden="true">→</span></a>
+        </article>
+
+        <!-- Service 8 — NUEVO -->
+        <article class="service-card reveal service-card--new" id="service-onpremise">
+          <div class="service-icon-wrapper"><div class="service-icon service-icon--onpremise">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div></div>
+          <span class="service-badge">Nuevo</span>
+          <h3 class="service-title">IA On-Premise &amp; Soberanía de Datos</h3>
+          <p class="service-desc">Desplegamos LLMs enterprise (Llama 3.3 70B, Qwen 2.5) en tu propia infraestructura con vLLM y Ollama. Control total de datos sensibles cumpliendo GDPR, HIPAA e ITAR — sin dependencia de APIs externas ni costo por token.</p>
+          <ul class="service-tags" aria-label="Tecnologías relacionadas">
+            <li>vLLM / Ollama</li><li>Llama 3.3 / Qwen 2.5</li><li>GPU Clusters</li><li>GDPR / HIPAA / ITAR</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-onpremise-link">Solicitar Proyecto <span aria-hidden="true">→</span></a>
+        </article>
+
+        <!-- Service 9 — NUEVO -->
+        <article class="service-card reveal service-card--new" id="service-microservices">
+          <div class="service-icon-wrapper"><div class="service-icon service-icon--microservices">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M13 6h3a2 2 0 0 1 2 2v7"/><line x1="6" y1="9" x2="6" y2="21"/></svg>
+          </div></div>
+          <span class="service-badge">Nuevo</span>
+          <h3 class="service-title">Microservicios Cloud-Native</h3>
+          <p class="service-desc">Arquitecturas cloud-native de alto rendimiento con Kubernetes, Service Mesh Istio Ambient / Cilium eBPF y event-driven patterns sobre Kafka. Sistemas que escalan a millones de usuarios con 99.99% de disponibilidad garantizada.</p>
+          <ul class="service-tags" aria-label="Tecnologías relacionadas">
+            <li>Kubernetes / Istio</li><li>Cilium / eBPF</li><li>Event-Driven / Kafka</li><li>GraphQL Federation</li>
+          </ul>
+          <a href="#contacto" class="service-link" id="service-microservices-link">Solicitar Proyecto <span aria-hidden="true">→</span></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- ===== TECHNOLOGY STACK ===== -->
+  <section class="technologies" id="tecnologias" aria-label="Stack tecnológico">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nuestro Arsenal Técnico</span>
+        <h2 class="section-title">Tecnologías de <span class="gradient-text">Vanguardia</span></h2>
+        <p class="section-subtitle">Dominamos el ecosistema tecnológico más avanzado para entregar soluciones robustas y escalables.</p>
+      </div>
+
+      <div class="tech-categories">
+        <!-- AI & ML -->
+        <div class="tech-category reveal" id="tech-aiml">
+          <h3 class="tech-cat-title">
+            <span class="tech-cat-icon">🤖</span> IA & Machine Learning
+          </h3>
+          <div class="tech-items">
+            <div class="tech-item" data-tooltip="Python">
+              <div class="tech-logo">🐍</div>
+              <span>Python</span>
+            </div>
+            <div class="tech-item" data-tooltip="TensorFlow">
+              <div class="tech-logo">🔷</div>
+              <span>TensorFlow</span>
+            </div>
+            <div class="tech-item" data-tooltip="PyTorch">
+              <div class="tech-logo">🔥</div>
+              <span>PyTorch</span>
+            </div>
+            <div class="tech-item" data-tooltip="Scikit-learn">
+              <div class="tech-logo">📊</div>
+              <span>Scikit-learn</span>
+            </div>
+            <div class="tech-item" data-tooltip="Hugging Face">
+              <div class="tech-logo">🤗</div>
+              <span>HuggingFace</span>
+            </div>
+            <div class="tech-item" data-tooltip="OpenCV">
+              <div class="tech-logo">👁️</div>
+              <span>OpenCV</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Big Data -->
+        <div class="tech-category reveal" id="tech-bigdata">
+          <h3 class="tech-cat-title">
+            <span class="tech-cat-icon">📡</span> Big Data & Streaming
+          </h3>
+          <div class="tech-items">
+            <div class="tech-item" data-tooltip="Apache Spark">
+              <div class="tech-logo">⚡</div>
+              <span>Apache Spark</span>
+            </div>
+            <div class="tech-item" data-tooltip="Apache Kafka">
+              <div class="tech-logo">📨</div>
+              <span>Kafka</span>
+            </div>
+            <div class="tech-item" data-tooltip="Hadoop">
+              <div class="tech-logo">🐘</div>
+              <span>Hadoop</span>
+            </div>
+            <div class="tech-item" data-tooltip="Airflow">
+              <div class="tech-logo">🌊</div>
+              <span>Airflow</span>
+            </div>
+            <div class="tech-item" data-tooltip="dbt">
+              <div class="tech-logo">🔧</div>
+              <span>dbt</span>
+            </div>
+            <div class="tech-item" data-tooltip="Databricks">
+              <div class="tech-logo">🧱</div>
+              <span>Databricks</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="tech-category reveal" id="tech-cloud">
+          <h3 class="tech-cat-title">
+            <span class="tech-cat-icon">☁️</span> Cloud & DevOps
+          </h3>
+          <div class="tech-items">
+            <div class="tech-item" data-tooltip="Amazon Web Services">
+              <div class="tech-logo">🟡</div>
+              <span>AWS</span>
+            </div>
+            <div class="tech-item" data-tooltip="Google Cloud Platform">
+              <div class="tech-logo">🔵</div>
+              <span>GCP</span>
+            </div>
+            <div class="tech-item" data-tooltip="Microsoft Azure">
+              <div class="tech-logo">🔷</div>
+              <span>Azure</span>
+            </div>
+            <div class="tech-item" data-tooltip="Docker">
+              <div class="tech-logo">🐳</div>
+              <span>Docker</span>
+            </div>
+            <div class="tech-item" data-tooltip="Kubernetes">
+              <div class="tech-logo">⚙️</div>
+              <span>Kubernetes</span>
+            </div>
+            <div class="tech-item" data-tooltip="Terraform">
+              <div class="tech-logo">🌐</div>
+              <span>Terraform</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="tech-category reveal" id="tech-databases">
+          <h3 class="tech-cat-title">
+            <span class="tech-cat-icon">🗄️</span> Bases de Datos
+          </h3>
+          <div class="tech-items">
+            <div class="tech-item" data-tooltip="PostgreSQL">
+              <div class="tech-logo">🐘</div>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="tech-item" data-tooltip="MongoDB">
+              <div class="tech-logo">🍃</div>
+              <span>MongoDB</span>
+            </div>
+            <div class="tech-item" data-tooltip="Redis">
+              <div class="tech-logo">🔴</div>
+              <span>Redis</span>
+            </div>
+            <div class="tech-item" data-tooltip="Elasticsearch">
+              <div class="tech-logo">🔍</div>
+              <span>Elasticsearch</span>
+            </div>
+            <div class="tech-item" data-tooltip="Snowflake">
+              <div class="tech-logo">❄️</div>
+              <span>Snowflake</span>
+            </div>
+            <div class="tech-item" data-tooltip="BigQuery">
+              <div class="tech-logo">📊</div>
+              <span>BigQuery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO / CASE STUDIES ===== -->
+  <section class="portfolio" id="portafolio" aria-label="Portafolio de proyectos">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Casos de Éxito</span>
+        <h2 class="section-title">Proyectos que <span class="gradient-text">Generan Impacto</span></h2>
+        <p class="section-subtitle">Resultados reales para empresas reales. Cada proyecto es una historia de transformación.</p>
+      </div>
+
+      <div class="portfolio-filter reveal" role="group" aria-label="Filtros de portafolio">
+        <button class="filter-btn active" data-filter="all" id="filter-all">Todos</button>
+        <button class="filter-btn" data-filter="ia" id="filter-ia">IA</button>
+        <button class="filter-btn" data-filter="data" id="filter-data">Big Data</button>
+        <button class="filter-btn" data-filter="cloud" id="filter-cloud">Cloud</button>
+        <button class="filter-btn" data-filter="software" id="filter-software">Software</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Case Study 1 -->
+        <article class="portfolio-card reveal" data-category="ia" id="case-1">
+          <div class="portfolio-card-header">
+            <span class="portfolio-category-badge">Inteligencia Artificial</span>
+            <div class="portfolio-status">✅ Completado</div>
+          </div>
+          <h3 class="portfolio-title">Motor de Recomendación con Deep Learning</h3>
+          <div class="portfolio-problem">
+            <strong>Problema:</strong> E-commerce con tasa de conversión del 1.2% debido a recomendaciones irrelevantes.
+          </div>
+          <div class="portfolio-solution">
+            <strong>Solución:</strong> Modelo de recomendación basado en redes neuronales colaborativas con procesamiento en tiempo real de comportamiento de usuario.
+          </div>
+          <div class="portfolio-results">
+            <div class="result-item">
+              <span class="result-number">+340%</span>
+              <span class="result-label">Conversión</span>
+            </div>
+            <div class="result-item">
+              <span class="result-number">-60%</span>
+              <span class="result-label">Bounce Rate</span>
+            </div>
+            <div class="result-item">
+              <span class="result-number">+280%</span>
+              <span class="result-label">Revenue</span>
+            </div>
+          </div>
+          <div class="portfolio-tech-stack">
+            <span>PyTorch</span><span>FastAPI</span><span>Redis</span><span>GCP</span>
+          </div>
+        </article>
+
+        <!-- Case Study 2 -->
+        <article class="portfolio-card reveal" data-category="data" id="case-2">
+          <div class="portfolio-card-header">
+            <span class="portfolio-category-badge">Big Data</span>
+            <div class="portfolio-status">✅ Completado</div>
+          </div>
+          <h3 class="portfolio-title">Pipeline de Datos en Tiempo Real para Fintech</h3>
+          <div class="portfolio-problem">
+            <strong>Problema:</strong> Institución financiera incapaz de detectar fraudes en transacciones por latencia de procesamiento de 48 horas.
+          </div>
+          <div class="portfolio-solution">
+            <strong>Solución:</strong> Arquitectura de streaming con Apache Kafka y Spark Streaming para detección de anomalías en tiempo real con ML integrado.
+          </div>
+          <div class="portfolio-results">
+            <div class="result-item">
+              <span class="result-number">99.8%</span>
+              <span class="result-label">Precisión</span>
+            </div>
+            <div class="result-item">
+              <span class="result-number">&lt;200ms</span>
+              <span class="result-label">Latencia</span>
+            </div>
+            <div class="result-item">
+              <span class="result-number">$2.1M</span>
+              <span class="result-label">Fraudes Evitados</span>
+            </div>
+          </div>
+          <div class="portfolio-tech-stack">
+            <span>Kafka</span><span>Spark</span><span>Python</span><span>AWS</span>
+          </div>
+        </article>
+
+        <!-- Case Study 3 -->
+        <article class="portfolio-card reveal" data-category="cloud" id="case-3">
+          <div class="portfolio-card-header">
+            <span class="portfolio-category-badge">Cloud & DevOps</span>
+            <div class="portfolio-status">✅ Completado</div>
+          </div>
+          <h3 class="portfolio-title">Migración Cloud y Modernización de Plataforma Legacy</h3>
+          <div class="portfolio-problem">
+            <strong>Problema:</strong> Empresa manufacturera con sistema monolítico de 15 años incapaz de escalar en temporadas de alta demanda.
+          </div>
+          <div class="portfolio-solution">
+            <strong>Solución:</strong> Migración a microservicios en Kubernetes con auto-scaling, CI/CD pipelines y reducción del 70% en deuda técnica.
+          </div>
+          <div class="portfolio-results">
+            <div class="result-item">
+              <span class="result-number">99.99%</span>
+              <span class="result-label">Uptime</span>
+            </div>
+            <div class="result-item">
+              <span class="result-number">-65%</span>
+              <span class="result-label">Costos Infra</span>
+            </div>
+            <div class="result-item">
+              <span class="result-number">10x</span>
+              <span class="result-label">Velocidad Deploy</span>
+            </div>
+          </div>
+          <div class="portfolio-tech-stack">
+            <span>Kubernetes</span><span>Docker</span><span>Azure</span><span>Terraform</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="portfolio-cta reveal">
+        <a href="#contacto" class="btn btn-primary" id="portfolio-more-btn">
+          <span>Discutir Tu Proyecto</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS SECTION ===== -->
+  <section class="process" id="proceso" aria-label="Nuestro proceso de trabajo">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Metodología de Trabajo</span>
+        <h2 class="section-title">Cómo <span class="gradient-text">Ejecutamos</span> Tu Proyecto</h2>
+        <p class="section-subtitle">Un proceso probado que garantiza entregas de calidad, en tiempo y dentro del presupuesto.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal" id="step-1">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <div class="step-icon" aria-hidden="true">🔍</div>
+            <h3 class="step-title">Descubrimiento & Análisis</h3>
+            <p class="step-desc">Comprendemos profundamente tu negocio, datos actuales, objetivos y restricciones técnicas. Definimos métricas de éxito claras y alcanzables.</p>
+          </div>
+        </div>
+
+        <div class="process-connector" aria-hidden="true"></div>
+
+        <div class="process-step reveal" id="step-2">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <div class="step-icon" aria-hidden="true">🏗️</div>
+            <h3 class="step-title">Arquitectura & Diseño</h3>
+            <p class="step-desc">Diseñamos la arquitectura técnica óptima: selección de tecnologías, diagramas de sistema, modelo de datos y plan de implementación detallado.</p>
+          </div>
+        </div>
+
+        <div class="process-connector" aria-hidden="true"></div>
+
+        <div class="process-step reveal" id="step-3">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <div class="step-icon" aria-hidden="true">⚡</div>
+            <h3 class="step-title">Desarrollo Ágil</h3>
+            <p class="step-desc">Implementación en sprints con entregas incrementales. Revisiones continuas, testing automatizado y comunicación transparente en cada etapa.</p>
+          </div>
+        </div>
+
+        <div class="process-connector" aria-hidden="true"></div>
+
+        <div class="process-step reveal" id="step-4">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <div class="step-icon" aria-hidden="true">🚀</div>
+            <h3 class="step-title">Despliegue & Soporte</h3>
+            <p class="step-desc">Deployment controlado con zero-downtime, monitoreo continuo y soporte post-lanzamiento. Documentación técnica completa para tu equipo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST SIGNALS / ABOUT ===== -->
+  <section class="nosotros" id="nosotros" aria-label="Sobre nosotros">
+    <div class="container">
+      <div class="nosotros-grid">
+        <div class="nosotros-content reveal">
+          <span class="section-tag">Sobre TitanDataSolution</span>
+          <h2 class="section-title">Ingenieros que <span class="gradient-text">Entienden</span> Tu Negocio</h2>
+          <p class="nosotros-desc">
+            Somos un equipo de ingenieros especializados en ciencia de datos, inteligencia artificial y sistemas distribuidos. Combinamos rigor técnico con visión empresarial para construir soluciones que generan impacto real.
+          </p>
+          <p class="nosotros-desc">
+            No vendemos tecnología por vendería: analizamos tu problema, proponemos la arquitectura más eficiente y te acompañamos hasta que los resultados sean medibles y sostenibles.
+          </p>
+
+          <div class="nosotros-values">
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true">⚡</span>
+              <div>
+                <strong>Excelencia Técnica</strong>
+                <p>Código de producción, documentado y testado.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true">🎯</span>
+              <div>
+                <strong>Orientados a Resultados</strong>
+                <p>Medimos el éxito en KPIs de tu negocio.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <span class="value-icon" aria-hidden="true">🤝</span>
+              <div>
+                <strong>Transparencia Total</strong>
+                <p>Comunicación clara en cada etapa del proyecto.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nosotros-stats reveal">
+          <div class="stat-card" id="stats-card-main">
+            <div class="big-stat">
+              <span class="big-stat-number">8+</span>
+              <span class="big-stat-label">Años de Experiencia</span>
+            </div>
+            <div class="stats-grid">
+              <div class="stats-mini">
+                <span class="stats-mini-number">80+</span>
+                <span class="stats-mini-label">Proyectos Entregados</span>
+              </div>
+              <div class="stats-mini">
+                <span class="stats-mini-number">50+</span>
+                <span class="stats-mini-label">Clientes Activos</span>
+              </div>
+              <div class="stats-mini">
+                <span class="stats-mini-number">98%</span>
+                <span class="stats-mini-label">Satisfacción</span>
+              </div>
+              <div class="stats-mini">
+                <span class="stats-mini-number">30+</span>
+                <span class="stats-mini-label">Tecnologías</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal" id="testimonial-1">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">TitanDataSolution transformó completamente nuestro procesamiento de datos. Redujeron el tiempo de análisis de días a minutos. Resultados extraordinarios.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">ML</div>
+              <div>
+                <strong>María López</strong>
+                <span>CTO, FinanceCore S.A.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal" id="testimonial-2">
+            <div class="testimonial-quote">"</div>
+            <p class="testimonial-text">El sistema de IA que desarrollaron aumentó nuestra conversión en un 340%. Profesionales de alto nivel con un enfoque verdaderamente orientado a resultados.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">JR</div>
+              <div>
+                <strong>Juan Rodríguez</strong>
+                <span>CEO, TechRetail Latam</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="contacto" id="contacto" aria-label="Contacto y propuestas">
+    <div class="container">
+      <div class="contacto-grid">
+        <div class="contacto-info reveal">
+          <span class="section-tag">Empecemos</span>
+          <h2 class="section-title">¿Listo para <span class="gradient-text">Transformar</span> tu Negocio?</h2>
+          <p class="contacto-desc">Cuéntanos tu desafío. Nuestro equipo de ingenieros analizará tu caso y te enviaremos una propuesta detallada y sin compromiso en 48 horas.</p>
+
+          <div class="contact-details">
+            <div class="contact-item" id="contact-email-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@titandatasolution.com">info@titandatasolution.com</a>
+              </div>
+            </div>
+            <div class="contact-item" id="contact-whatsapp-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer">+57 300 000 0000</a>
+              </div>
+            </div>
+            <div class="contact-item" id="contact-linkedin-item">
+              <div class="contact-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div>
+                <strong>LinkedIn</strong>
+                <a href="https://linkedin.com/company/titandatasolution" target="_blank" rel="noopener noreferrer">TitanDataSolution</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="response-badge" aria-label="Tiempo de respuesta garantizado">
+            <span>⚡</span>
+            <span>Respuesta garantizada en <strong>48 horas</strong></span>
+          </div>
+        </div>
+
+        <div class="contacto-form reveal">
+          <form id="contact-form" novalidate aria-label="Formulario de solicitud de propuesta">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Nombre completo *</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Tu nombre" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Correo electrónico *</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="tu@empresa.com" required autocomplete="email" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-company" class="form-label">Empresa</label>
+                <input type="text" id="contact-company" name="company" class="form-input" placeholder="Nombre de tu empresa" autocomplete="organization" />
+              </div>
+              <div class="form-group">
+                <label for="contact-service" class="form-label">Servicio de Interés *</label>
+                <select id="contact-service" name="service" class="form-input form-select" required>
+                  <option value="" disabled selected>Selecciona un servicio</option>
+                  <option value="ia">Inteligencia Artificial / ML</option>
+                  <option value="datascience">Ciencia de Datos</option>
+                  <option value="bigdata">Big Data & ETL</option>
+                  <option value="software">Desarrollo de Sistemas</option>
+                  <option value="cloud">Cloud & DevOps</option>
+                  <option value="digital">Transformación Digital</option>
+                  <option value="otro">Otro / Consultoría General</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Descripción del Proyecto *</label>
+              <textarea id="contact-message" name="message" class="form-input form-textarea" placeholder="Describe tu desafío o proyecto. ¿Qué problema buscas resolver? ¿Cuáles son tus principales objetivos?" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="contact-submit-btn">
+              <span id="btn-text">Solicitar Propuesta Gratuita</span>
+              <svg id="btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+
+            <p class="form-privacy">🔒 Tu información está segura. No compartimos datos con terceros.</p>
+          </form>
+
+          <div id="form-success" class="form-success hidden" role="alert">
+            <div class="success-icon" aria-hidden="true">✅</div>
+            <h3>¡Propuesta Enviada!</h3>
+            <p>Gracias por contactarnos. Nuestro equipo revisará tu proyecto y te responderá en menos de 48 horas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#inicio" class="nav-logo" aria-label="TitanDataSolution - Inicio">
+            <img src="assets/images/logo.png" alt="TitanDataSolution Logo" class="logo-img" />
+            <span class="logo-text">Titan<span class="logo-accent">Data</span>Solution</span>
+          </a>
+          <p class="footer-tagline">Transformamos datos en decisiones estratégicas. Ingeniería de software, IA y Big Data para empresas que quieren liderar.</p>
+          <div class="footer-socials" aria-label="Redes sociales">
+            <a href="https://linkedin.com/company/titandatasolution" target="_blank" rel="noopener noreferrer" class="social-link" id="footer-linkedin" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://github.com/titandatasolution" target="_blank" rel="noopener noreferrer" class="social-link" id="footer-github" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="https://twitter.com/titandatasoln" target="_blank" rel="noopener noreferrer" class="social-link" id="footer-twitter" aria-label="X (Twitter)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Servicios</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="#servicios" class="footer-link">Inteligencia Artificial</a></li>
+            <li><a href="#servicios" class="footer-link">Ciencia de Datos</a></li>
+            <li><a href="#servicios" class="footer-link">Big Data & ETL</a></li>
+            <li><a href="#servicios" class="footer-link">Desarrollo de Sistemas</a></li>
+            <li><a href="#servicios" class="footer-link">Cloud & DevOps</a></li>
+            <li><a href="#servicios" class="footer-link">Transformación Digital</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Empresa</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="#nosotros" class="footer-link">Sobre Nosotros</a></li>
+            <li><a href="#portafolio" class="footer-link">Portafolio</a></li>
+            <li><a href="#proceso" class="footer-link">Metodología</a></li>
+            <li><a href="#tecnologias" class="footer-link">Tecnologías</a></li>
+            <li><a href="#contacto" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contacto Rápido</h4>
+          <ul class="footer-links" role="list">
+            <li><a href="mailto:info@titandatasolution.com" class="footer-link">✉️ info@titandatasolution.com</a></li>
+            <li><a href="https://wa.me/573000000000" target="_blank" rel="noopener noreferrer" class="footer-link">💬 WhatsApp Business</a></li>
+            <li><a href="https://linkedin.com/company/titandatasolution" target="_blank" rel="noopener noreferrer" class="footer-link">🔗 LinkedIn</a></li>
+          </ul>
+          <div class="footer-cta-box">
+            <p>¿Proyecto en mente?</p>
+            <a href="#contacto" class="btn btn-primary btn-sm" id="footer-cta-btn">Solicitar Propuesta</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 TitanDataSolution. Todos los derechos reservados.</p>
+        <div class="footer-legal" role="list">
+          <a href="#" class="footer-link-sm" role="listitem">Política de Privacidad</a>
+          <a href="#" class="footer-link-sm" role="listitem">Términos de Servicio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="back-to-top-btn" aria-label="Volver al inicio">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
