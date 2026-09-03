@@ -1,0 +1,169 @@
+---
+/*
+===============================================================================
+ TitanDevDataDynamics — Layout Principal para Lectura de Artículos del Blog
+===============================================================================
+ Este componente Astro provee el diseño responsivo, estético y profesional
+ para la lectura de artículos MDX.
+ 
+ Características:
+ - Cabecera con metadatos: título, fecha, autor, tiempo de lectura y tags.
+ - Estilos Glassmorphic en contenedores.
+ - Formato tipográfico optimizado para código y lectura (Inter / Outfit).
+===============================================================================
+*/
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  author: string;
+  tags: string[];
+  min_read: string;
+}
+
+const { title, description, pubDate, author, tags, min_read } = Astro.props;
+const formattedDate = new Date(pubDate).toLocaleDateString('es-ES', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title} — TitanDevDataDynamics Tech Insights</title>
+  <meta name="description" content={description} />
+  
+  <!-- Fuentes e Iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
+  
+  <style>
+    .blog-container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: var(--space-4xl) var(--space-lg);
+    }
+    
+    .article-header {
+      margin-bottom: var(--space-3xl);
+      text-align: center;
+    }
+    
+    .article-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.15;
+      background: linear-gradient(135deg, #ffffff 0%, var(--color-lavender) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: var(--space-md);
+    }
+    
+    .article-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-md);
+      color: var(--color-slate);
+      font-size: 0.9rem;
+      margin-top: var(--space-md);
+    }
+    
+    .article-tag {
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      background: rgba(124, 58, 237, 0.15);
+      border: 1px solid rgba(124, 58, 237, 0.3);
+      color: var(--color-lavender);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    
+    .article-body {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(16px);
+      border: 1px solid var(--color-glass-border);
+      border-radius: var(--radius-xl);
+      padding: var(--space-3xl);
+      color: var(--color-slate-light);
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    
+    .article-body h1, .article-body h2, .article-body h3 {
+      font-family: var(--font-heading);
+      color: #ffffff;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .article-body code {
+      background: rgba(124, 58, 237, 0.15);
+      color: #00d2ff;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 0.9em;
+    }
+    
+    .article-body pre {
+      background: #090d16 !important;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+    
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--color-cyan);
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: var(--space-xl);
+      transition: transform 0.2s ease;
+    }
+    
+    .back-link:hover {
+      transform: translateX(-4px);
+    }
+  </style>
+</head>
+<body>
+  <main class="blog-container">
+    <a href="/blog" class="back-link">← Volver al Blog Tech Insights</a>
+    
+    <header class="article-header">
+      <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">
+        {tags.map(tag => <span class="article-tag">{tag}</span>)}
+      </div>
+      <h1 class="article-title">{title}</h1>
+      <p style="color: var(--color-slate); font-size: 1.15rem; max-width: 700px; margin: 0 auto;">{description}</p>
+      
+      <div class="article-meta">
+        <span>Por <strong>{author}</strong></span>
+        <span>•</span>
+        <time>{formattedDate}</time>
+        <span>•</span>
+        <span>⏱️ {min_read} de lectura</span>
+      </div>
+    </header>
+
+    <article class="article-body">
+      <slot />
+    </article>
+  </main>
+</body>
+</html>
