@@ -7,8 +7,13 @@ export default defineConfig({
   integrations: [mdx(), react()],
   output: 'static',
   site: 'https://titandevdatadynamics.com',
+  server: {
+    host: '0.0.0.0',
+    port: 4321,
+  },
   vite: {
     server: {
+      host: '0.0.0.0',
       proxy: {
         // Redirige llamadas del frontend /api/v1 al backend FastAPI en puerto 8000
         '/api/v1': {
