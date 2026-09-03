@@ -1,0 +1,44 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "TitanDevDataDynamics",
+  "url": "https://titandevdatadynamics.com",
+  "logo": "https://titandevdatadynamics.com/assets/favicon.svg",
+  "description": "Ingeniería de Software de Vanguardia, Agentes de IA Enterprise, Visión Artificial, IA On-Premise y Data Lakehouses.",
+  "knowsAbout": [
+    "Artificial Intelligence",
+    "Retrieval-Augmented Generation",
+    "Computer Vision",
+    "Apache Iceberg",
+    "vLLM",
+    "Microservices"
+  ],
+  "serviceArea": "Worldwide",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Catálogo de Servicios de IA & Data 2026",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Agentes de IA Enterprise & RAG Avanzado"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Visión Artificial e Inspección Automatizada"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "IA On-Premise & Soberanía de Datos"
+        }
+      }
+    ]
+  }
+}

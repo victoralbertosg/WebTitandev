@@ -1,0 +1,45 @@
+---
+/*
+===============================================================================
+ TitanDevDataDynamics — Página de Demos Interactivas
+===============================================================================
+ Monta las Islas React de Visión Artificial y RAG Sandbox.
+===============================================================================
+*/
+
+import DemoVision from '../components/DemoVision.jsx';
+import DemoRag from '../components/DemoRag.jsx';
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sandbox de Demos Interactivas de IA — TitanDevDataDynamics</title>
+  <meta name="description" content="Pruebe en vivo las capacidades de Visión Artificial (YOLO11) y RAG Corporativo conectadas a nuestro backend de microservicios." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body style="background: #030712; color: #fff; min-height: 100vh; padding: 40px 20px;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <a href="/" style="color: var(--color-cyan); text-decoration: none; font-weight: 600; display: inline-block; margin-bottom: 20px;">← Volver al Inicio</a>
+    
+    <h1 style="font-family: 'Outfit', sans-serif; font-size: 2.8rem; text-align: center; margin-bottom: 10px;">
+      🧪 Sandbox de Demos Interactivas
+    </h1>
+    <p style="text-align: center; color: var(--color-slate); max-width: 600px; margin: 0 auto 40px;">
+      Demostraciones interactivas alimentadas por nuestro microservicio backend en Python.
+    </p>
+
+    <!-- Componente Isla React: Visión Artificial -->
+    <DemoVision client:visible />
+
+    <!-- Componente Isla React: RAG Search -->
+    <DemoRag client:visible />
+  </div>
+</body>
+</html>

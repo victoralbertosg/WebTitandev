@@ -1,0 +1,34 @@
+---
+/*
+===============================================================================
+ TitanDevDataDynamics — Página de Calculadora de ROI
+===============================================================================
+ Monta la Isla React <RoiCalculator client:visible /> dentro de un layout estético.
+===============================================================================
+*/
+
+import RoiCalculator from '../components/RoiCalculator.jsx';
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de ROI de IA & RAG Enterprise — TitanDevDataDynamics</title>
+  <meta name="description" content="Calcule en tiempo real el ahorro en USD y horas hombre de implementar Inteligencia Artificial en su empresa." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body style="background: #030712; color: #fff; min-height: 100vh; padding: 40px 20px;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <a href="/" style="color: var(--color-cyan); text-decoration: none; font-weight: 600; display: inline-block; margin-bottom: 20px;">← Volver al Inicio</a>
+    
+    <!-- Componente Isla React Hidratado -->
+    <RoiCalculator client:visible />
+  </div>
+</body>
+</html>

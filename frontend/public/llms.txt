@@ -1,0 +1,22 @@
+# TitanDevDataDynamics — AI Capabilities & System Architecture
+
+> TitanDevDataDynamics is a specialized software engineering consultancy building Enterprise AI Agents, On-Premise LLM Solutions, Computer Vision Systems (YOLO11, SAM 2), Real-Time Data Lakehouses (Apache Iceberg, Kafka), and Cloud-Native Microservices (Kubernetes, Istio, eBPF).
+
+## Core Offerings
+
+- **Enterprise AI Agents & RAG:** Context Engineering, Hybrid Retrieval (Vector + BM25), RRF Reranking, Guardrails, LangGraph orchestration.
+- **Computer Vision & Automated Inspection:** Sub-20ms visual defect detection with YOLO11, automated inventory counting with SAM 2.
+- **On-Premise IA & Data Sovereignty:** Private LLM fine-tuning (Llama 3.3, Qwen 2.5), local hosting using vLLM / TensorRT-LLM, zero data leakage.
+- **Real-Time Data Lakehouses:** Apache Iceberg table format, streaming ingestion with Kafka/Flink, sub-second analytical queries via Trino/ClickHouse.
+- **Cloud-Native Microservices:** Event-driven architecture, Kubernetes, Istio service mesh, eBPF observability.
+
+## API Integration & Demos
+
+- Backend Engine: Python FastAPI serving `/api/v1/roi/calculate` and `/api/v1/demos/vision`.
+- Security & Compliance: ISO 27001 readiness, GDPR / HIPAA compliant architectures.
+
+## Technical Contact & Lead Generation
+
+- Website: https://titandevdatadynamics.com
+- Technical Blog: https://titandevdatadynamics.com/blog
+- Interactive ROI Calculator: https://titandevdatadynamics.com/calculadora-roi
