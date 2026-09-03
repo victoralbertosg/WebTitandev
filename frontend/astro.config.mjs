@@ -14,6 +14,14 @@ export default defineConfig({
   vite: {
     server: {
       host: '0.0.0.0',
+      allowedHosts: [
+        'titandevdatadynamics.com',
+        'www.titandevdatadynamics.com',
+        '.titandevdatadynamics.com',
+        'localhost',
+        '127.0.0.1',
+        '192.168.1.69'
+      ],
       proxy: {
         // Redirige llamadas del frontend /api/v1 al backend FastAPI en puerto 8000
         '/api/v1': {
