@@ -6,6 +6,13 @@ Thumbs.db
 *.log
 logs/
 
+# Python Virtual environments
+venv/
+.venv/
+backend/venv/
+__pycache__/
+*.pyc
+
 # Node / Environment (if added later)
 node_modules/
 .env
