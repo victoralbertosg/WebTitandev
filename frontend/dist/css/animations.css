@@ -1,0 +1,311 @@
+/* ===================================================
+   TitanDataSolution — Animations & Keyframes
+   =================================================== */
+
+/* ===== REVEAL ON SCROLL ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered reveal for grid items */
+.services-grid .service-card:nth-child(1) { transition-delay: 0.05s; }
+.services-grid .service-card:nth-child(2) { transition-delay: 0.1s; }
+.services-grid .service-card:nth-child(3) { transition-delay: 0.15s; }
+.services-grid .service-card:nth-child(4) { transition-delay: 0.2s; }
+.services-grid .service-card:nth-child(5) { transition-delay: 0.25s; }
+.services-grid .service-card:nth-child(6) { transition-delay: 0.3s; }
+
+.portfolio-grid .portfolio-card:nth-child(1) { transition-delay: 0.05s; }
+.portfolio-grid .portfolio-card:nth-child(2) { transition-delay: 0.1s; }
+.portfolio-grid .portfolio-card:nth-child(3) { transition-delay: 0.15s; }
+
+.tech-categories .tech-category:nth-child(1) { transition-delay: 0.05s; }
+.tech-categories .tech-category:nth-child(2) { transition-delay: 0.1s; }
+.tech-categories .tech-category:nth-child(3) { transition-delay: 0.15s; }
+.tech-categories .tech-category:nth-child(4) { transition-delay: 0.2s; }
+
+.process-steps .process-step:nth-child(1) { transition-delay: 0.05s; }
+.process-steps .process-step:nth-child(3) { transition-delay: 0.1s; }
+.process-steps .process-step:nth-child(5) { transition-delay: 0.15s; }
+.process-steps .process-step:nth-child(7) { transition-delay: 0.2s; }
+
+.hero-badge { transition-delay: 0.1s; }
+.hero-title { transition-delay: 0.2s; }
+.hero-subtitle { transition-delay: 0.3s; }
+.hero-actions { transition-delay: 0.4s; }
+.hero-stats { transition-delay: 0.5s; }
+.scroll-indicator { transition-delay: 0.6s; }
+
+/* ===== KEYFRAMES ===== */
+
+/* Floating glow animations */
+@keyframes floatGlow1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, 20px) scale(1.05); }
+  66% { transform: translate(-20px, 30px) scale(0.95); }
+}
+
+@keyframes floatGlow2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-40px, -20px) scale(1.1); }
+  66% { transform: translate(20px, -30px) scale(0.9); }
+}
+
+@keyframes floatGlow3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(20px, -30px); }
+}
+
+/* Pulse animation for badge dot */
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(0, 212, 255, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(0, 212, 255, 0);
+  }
+}
+
+/* Scroll indicator */
+@keyframes scrollDown {
+  0% { transform: translateY(0); opacity: 1; }
+  80% { transform: translateY(12px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 0; }
+}
+
+/* Gradient border animation */
+@keyframes gradientBorderRotate {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Floating animation for elements */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Shimmer for loading */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Counter animation helpers */
+@keyframes countUp {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Slide up */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale in */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Rotate loop for decorative elements */
+@keyframes rotateSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ===== PARTICLE CANVAS FADE IN ===== */
+#hero-canvas {
+  animation: fadeIn 2s ease forwards;
+}
+
+/* ===== TECH ITEMS STAGGER ===== */
+.tech-item {
+  animation: none;
+}
+
+.tech-category.revealed .tech-item:nth-child(1) { animation: scaleIn 0.4s ease forwards 0.05s; }
+.tech-category.revealed .tech-item:nth-child(2) { animation: scaleIn 0.4s ease forwards 0.1s; }
+.tech-category.revealed .tech-item:nth-child(3) { animation: scaleIn 0.4s ease forwards 0.15s; }
+.tech-category.revealed .tech-item:nth-child(4) { animation: scaleIn 0.4s ease forwards 0.2s; }
+.tech-category.revealed .tech-item:nth-child(5) { animation: scaleIn 0.4s ease forwards 0.25s; }
+.tech-category.revealed .tech-item:nth-child(6) { animation: scaleIn 0.4s ease forwards 0.3s; }
+
+.tech-item {
+  opacity: 0;
+}
+
+.tech-category.revealed .tech-item {
+  opacity: 1;
+}
+
+/* ===== PROCESS CONNECTOR ANIMATION ===== */
+.process-connector {
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: opacity 0.6s ease 0.3s, transform 0.6s ease 0.3s;
+}
+
+.process-steps.revealed .process-connector {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* ===== HOVER GLOW EFFECTS ===== */
+.service-card:hover .service-icon svg {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* ===== NAVBAR LINK UNDERLINE ===== */
+.nav-link:not(.nav-cta) {
+  position: relative;
+}
+
+.nav-link:not(.nav-cta)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--gradient-brand);
+  transition: all var(--transition-fast);
+  transform: translateX(-50%);
+  border-radius: var(--radius-full);
+}
+
+.nav-link:not(.nav-cta):hover::after {
+  width: calc(100% - 1rem);
+}
+
+/* ===== BUTTON RIPPLE ===== */
+.btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn .ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(0);
+  animation: rippleEffect 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes rippleEffect {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* ===== MOBILE MENU ANIMATION ===== */
+.nav-menu.mobile-open {
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== HAMBURGER ANIMATION ===== */
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* ===== FORM INPUT ANIMATION ===== */
+.form-group {
+  position: relative;
+}
+
+.form-input:focus + .form-label {
+  color: var(--color-cyan);
+}
+
+/* ===== PORTFOLIO CARD ENTRANCE ===== */
+.portfolio-card.hidden {
+  opacity: 0;
+  transform: scale(0.95) translateY(10px);
+  pointer-events: none;
+}
+
+.portfolio-card {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ===== SCROLL PROGRESS BAR ===== */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--gradient-brand);
+  z-index: calc(var(--z-navbar) + 1);
+  transition: width 0.1s linear;
+  border-radius: 0 var(--radius-full) var(--radius-full) 0;
+}
+
+/* ===== RESPONSIVE ANIMATIONS ===== */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .tech-item {
+    opacity: 1;
+    animation: none !important;
+  }
+}

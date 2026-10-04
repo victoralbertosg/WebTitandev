@@ -42,7 +42,8 @@ export default function RoiCalculator() {
     setError(null);
 
     try {
-      const response = await fetch('/api/v1/roi/calculate', {
+      const API_URL = import.meta.env.PUBLIC_API_URL || 'https://api.titandevdatadynamics.com';
+      const response = await fetch(`${API_URL}/api/v1/roi/calculate`, {      
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

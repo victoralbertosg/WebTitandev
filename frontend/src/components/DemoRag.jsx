@@ -19,7 +19,8 @@ export default function DemoRag() {
     setLoading(true);
 
     try {
-      const res = await fetch('/api/v1/demos/rag', {
+      const API_URL = import.meta.env.PUBLIC_API_URL || 'https://api.titandevdatadynamics.com';
+      const res = await fetch(`${API_URL}/api/v1/demos/rag`, {      
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query })

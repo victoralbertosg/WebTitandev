@@ -35,12 +35,14 @@ class Settings:
         "http://localhost:4321",         # Astro Dev Server
         "http://127.0.0.1",
         "http://127.0.0.1:4321",
-        "http://192.168.1.69",
-        "http://192.168.1.69:4321",
-        "http://192.168.1.69:8000",
+        "http://192.168.1.100",
+        "http://192.168.1.100:4321",
+        "http://192.168.1.100:8000",
         "http://0.0.0.0:4321",
         "https://titandevdatadynamics.com",
         "https://www.titandevdatadynamics.com",
+        "https://api.titandevdatadynamics.com",
+        "http://api.titandevdatadynamics.com",
     ]
 
 # Instancia global reutilizable de configuración
