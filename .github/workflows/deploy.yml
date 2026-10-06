@@ -1,0 +1,26 @@
+name: Deploy TitanDev to Homelab
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:   # Permite ejecutarlo manualmente desde GitHub
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Configurar clave SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan -H ${{ secrets.OMV_IP }} >> ~/.ssh/known_hosts
+
+      - name: Ejecutar deploy en OMV
+        run: |
+          ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no root@${{ secrets.OMV_IP }} \
+            "/srv/dev-disk-by-uuid-f5eb457e-e235-44cd-94ae-0d7db896c77b/titandev/scripts/deploy.sh"
